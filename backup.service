@@ -1,6 +1,0 @@
-[Unit]
-Description=backup resources server
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /home/back/backup/backup.sh
