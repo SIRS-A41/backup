@@ -1,8 +1,8 @@
 #!/bin/sh
 
-scp -r -q sirs@192.168.1.112:~ /home/backup/projects 2> /dev/null
+scp -r sirs@192.168.4.1:/home/sirs /home/back/ 2>/dev/null
 
-find /home/backup/projects -type f -iname "*" -print0 | xargs -I {} -0 chmod 0444 {}
-find /home/backup/projects -type d -iname "*" -print0 | xargs -I {} -0 chmod 0644 {}
+find /home/back/sirs -type f -iname "*" -print0 | xargs -I {} -0 chmod 0444 {}
+find /home/back/sirs -type d -iname "*" -print0 | xargs -I {} -0 chmod 0544 {}
 
 echo "Successful backup"
