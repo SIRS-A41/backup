@@ -1,1 +1,2 @@
 0 * * * * /home/backup/backup.sh
+30 */24 * * * sudo python3 /home/backup/backup-script.py
