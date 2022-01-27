@@ -5,7 +5,6 @@ import subprocess
 # Run this command on the backup-server.
 # Via scp connection it will copy the zip file with the snapshots of the machines:
 #   resource-server
-#   auth-server
 # How to run:
 # sudo python3 backup-script.py
 
